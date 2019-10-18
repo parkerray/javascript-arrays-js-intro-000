@@ -6,8 +6,7 @@ function addElementToBeginningOfArray(array, element) {
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  var newAarray = [element, ...array]
-  console.log(element);
-  console.log(array);
+  array[0] = element;
+  var newAarray = array;
   return newAarray;
 }
